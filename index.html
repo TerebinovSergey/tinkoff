@@ -4,10 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style.css" />
-    <title>CV</title>
+    <link rel="icon" type="image/png" href="./src/img/favicon-cv.png" />
+    <title>Resume</title>
   </head>
   <body>
-    <h1>CV</h1>
+    <header class="header main-container">
+      <div class="header__left-container">
+        <div class="photo">
+          <img
+            class="photo__img"
+            src="./src/img/profileImg-cv1.png"
+            alt="profile img"
+          />
+        </div>
+
+        <section class="name-box">
+          <div class="name-box__container">
+            <h2 class="name-box__greeting-phrase">Hello 👋🏻 I’m</h2>
+            <div class="your-info">
+              <div class="your-info__input-container">
+                <label class="your-info__label hidden" for="your-name"
+                  >Name</label
+                >
+                <input
+                  class="your-info__name your-info__input"
+                  type="text"
+                  id="your-name"
+                  value="Karthik SR"
+                />
+              </div>
+              <div class="your-info__input-container">
+                <label class="your-info__label hidden" for="your-role"
+                  >Role</label
+                >
+                <input
+                  class="your-info__role your-info__input"
+                  type="text"
+                  id="your-role"
+                  value="UX/UI Designer"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="header__right-container">
+        <section class="languages-box">
+          <h2 class="languages-box__title">Languages</h2>
+          <div class="languages-box__container">
+            <ul class="list-name-languages">
+              <li class="list-name-languages__item">
+                <label class="list-name-languages__label hidden" for="language1"
+                  >Language</label
+                >
+                <input
+                  class="list-name-languages__name"
+                  type="text"
+                  id="language1"
+                  value="English"
+                />
+              </li>
+              <li class="list-name-languages__item">
+                <label class="list-name-languages__label hidden" for="language2"
+                  >Language</label
+                >
+                <input
+                  class="list-name-languages__name"
+                  type="text"
+                  id="language2"
+                  value="Malayalam"
+                />
+              </li>
+              <li class="list-name-languages__item">
+                <label class="list-name-languages__label hidden" for="language3"
+                  >Language</label
+                >
+                <input
+                  class="list-name-languages__name"
+                  type="text"
+                  id="language3"
+                  value="Hindi"
+                />
+              </li>
+            </ul>
+            <ul class="list-level-languages">
+              <li class="list-level-languages__item"></li>
+              <li class="list-level-languages__item"></li>
+              <li class="list-level-languages__item"></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </header>
     <script src="./src/index.js"></script>
   </body>
 </html>
