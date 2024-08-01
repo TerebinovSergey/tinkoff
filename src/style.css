@@ -4,6 +4,7 @@
 @import './styles/header.css';
 @import './styles/name-box.css';
 @import './styles/languages-box.css';
+@import './styles/experience-box.css';
 
 @font-face {
   font-family: 'Poppins';
@@ -49,6 +50,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 h2 {
@@ -57,10 +59,45 @@ h2 {
 
 input {
   border: 0;
-  background-color: var(--background-base-color);
 }
 
 .main-container {
   padding: 0 20px;
   max-width: 595px;
+}
+
+.background-base {
+  background-color: var(--background-base-color);
+}
+
+.background-green {
+  background-color: var(--green-color);
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.main__top {
+  display: flex;
+  gap: 20px;
+}
+
+.tool-box {
+  display: flex;
+  width: 124px;
+  flex: 1;
+  border-radius: 12px;
+  background-color: blueviolet;
 }
