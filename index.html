@@ -17,7 +17,6 @@
             alt="profile img"
           />
         </div>
-
         <section class="name-box">
           <div class="name-box__container background-base">
             <h2 class="name-box__greeting-phrase">Hello 👋🏻 I’m</h2>
@@ -50,9 +49,9 @@
       </div>
       <div class="header__right-container">
         <section class="languages-box background-base">
-          <h2 class="languages-box__title">Languages</h2>
+          <h2 class="languages-box__title title">Languages</h2>
           <div class="languages-box__container">
-            <ul class="list-name-languages">
+            <ul class="list-name-languages ul-reset">
               <li class="list-name-languages__item">
                 <label class="list-name-languages__label hidden" for="language1"
                   >Language</label
@@ -87,7 +86,7 @@
                 />
               </li>
             </ul>
-            <ul class="list-level-languages">
+            <ul class="list-level-languages ul-reset">
               <li class="list-level-languages__item background-green"></li>
               <li class="list-level-languages__item background-green"></li>
               <li class="list-level-languages__item background-green"></li>
@@ -99,8 +98,10 @@
     <main class="main main-container">
       <div class="main__top">
         <section class="experience-box background-base">
-          <h2 class="experience-box__title">Experience</h2>
-          <ul class="list-job">
+          <header>
+            <h2 class="experience-box__title title">Experience</h2>
+          </header>
+          <ul class="list-job ul-reset">
             <li class="list-job__item job background-green color-white">
               <div class="job__top-bar">
                 <label class="job__label hidden" for="job-date">Job date</label>
@@ -175,7 +176,6 @@ SEO Content Creation for Blogs, Website, Social media
                 </ul>
               </div>
             </li>
-
             <li class="list-job__item job background-white">
               <div class="job__top-bar">
                 <label class="job__label hidden" for="job-date2"
@@ -242,7 +242,7 @@ Landing page, webapps and hybrid apps
                       class="about-job__textarea"
                       name="about-job-info"
                       maxlength="130"
-                      rows="1"
+                      rows="2"
                       aria-label="job feature"
                     >
 Coordinating with outside agencies, art services, web designer, marketing, printers, and colleagues as necessary.
@@ -251,7 +251,6 @@ Coordinating with outside agencies, art services, web designer, marketing, print
                 </ul>
               </div>
             </li>
-
             <li class="list-job__item job background-white">
               <div class="job__top-bar">
                 <label class="job__label hidden" for="job-date3"
@@ -330,7 +329,7 @@ Handle communication with clients, witnesses etc.
                       class="about-job__textarea"
                       name="about-job-info"
                       maxlength="130"
-                      rows="1"
+                      rows="2"
                       aria-label="job feature"
                     >
 Prepare case briefs and summarize depositions, interrogatories and testimony
@@ -341,7 +340,131 @@ Prepare case briefs and summarize depositions, interrogatories and testimony
             </li>
           </ul>
         </section>
-        <section class="tool-box"></section>
+        <section class="tool-box background-base">
+          <header>
+            <h2 class="tool-box__title title">Tools</h2>
+          </header>
+          <ul class="list-tool-categories ul-reset">
+            <li class="category-tools background-white">
+              <header
+                class="category-tools__header color-white background-black"
+              >
+                <h3 class="category-tools__title">design</h3>
+              </header>
+              <ul class="list-tools ul-reset">
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/figma.svg"
+                    alt="Figma"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/adobe-photoshop.svg"
+                    alt="Adobe photoshop"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/adobe-illustrator.svg"
+                    alt="Adobe illustrator"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/adobe-premiere.svg"
+                    alt="Adobe premiere"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/notion.svg"
+                    alt="Notion"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/meet.svg"
+                    alt="Meet"
+                    class="list-tools__img"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li class="category-tools background-white">
+              <header
+                class="category-tools__header color-white background-black"
+              >
+                <h3 class="category-tools__title">no-code</h3>
+              </header>
+              <ul class="list-tools ul-reset">
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/logoZapìer.svg"
+                    alt="Zapìer"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/logoFramer.svg"
+                    alt="Framer"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/logoWordpress.svg"
+                    alt="Wordpress"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/adobe-premiere.svg"
+                    alt="Adobe premiere"
+                    class="list-tools__img"
+                  />
+                </li>
+              </ul>
+            </li>
+            <li class="category-tools background-white">
+              <header
+                class="category-tools__header color-white background-black"
+              >
+                <h3 class="category-tools__title">artificial intelligence</h3>
+              </header>
+              <ul class="list-tools ul-reset">
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/logoChatGPT.svg"
+                    alt="ChatGPT"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/logoCopilot.svg"
+                    alt="Copilot"
+                    class="list-tools__img"
+                  />
+                </li>
+                <li class="list-tools__item">
+                  <img
+                    src="./src/icons/logoMidjourney.svg"
+                    alt="Midjourney"
+                    class="list-tools__img"
+                  />
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
       </div>
       <div class="main__bottom"></div>
     </main>

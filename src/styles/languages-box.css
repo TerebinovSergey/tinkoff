@@ -8,12 +8,6 @@
   border-radius: 12px;
 }
 
-.languages-box__title {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-}
-
 .languages-box__container {
   display: flex;
   gap: 17px;
@@ -21,11 +15,8 @@
 
 .list-name-languages,
 .list-level-languages {
-  margin: 0;
-  padding-left: 0;
   display: flex;
   flex-direction: column;
-  list-style-type: none;
 }
 
 .list-name-languages {

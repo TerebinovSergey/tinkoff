@@ -5,6 +5,7 @@
 @import './styles/name-box.css';
 @import './styles/languages-box.css';
 @import './styles/experience-box.css';
+@import './styles/tool-box.css';
 
 @font-face {
   font-family: 'Poppins';
@@ -78,8 +79,24 @@ input {
   background-color: #ffffff;
 }
 
+.background-black {
+  background-color: #000000;
+}
+
 .color-white {
   color: #ffffff;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.ul-reset {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
 }
 
 .main {
@@ -92,12 +109,4 @@ input {
 .main__top {
   display: flex;
   gap: 20px;
-}
-
-.tool-box {
-  display: flex;
-  width: 124px;
-  flex: 1;
-  border-radius: 12px;
-  background-color: blueviolet;
 }
