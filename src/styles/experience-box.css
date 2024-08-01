@@ -22,7 +22,7 @@
   border-radius: 10px;
 }
 
-.job__top-bar {
+.job__header {
   display: flex;
   justify-content: space-between;
 }
