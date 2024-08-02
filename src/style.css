@@ -6,6 +6,7 @@
 @import './styles/languages-box.css';
 @import './styles/experience-box.css';
 @import './styles/tool-box.css';
+@import './styles/education-box.css';
 
 @font-face {
   font-family: 'Poppins';
@@ -36,17 +37,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.hidden {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  opacity: 0;
-  overflow: hidden;
-}
-
 body {
   display: flex;
   flex-direction: column;
@@ -54,7 +44,9 @@ body {
   gap: 20px;
 }
 
-h2 {
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -99,6 +91,27 @@ input {
   list-style-type: none;
 }
 
+.editable-text {
+  display: inline-block;
+  min-width: 10px;
+}
+
+.editable-text:empty {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  background-color: #f17e7e;
+}
+
+.editable-text:focus {
+  padding: 2px 10px 2px 2px;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  color: #000000;
+  background-color: #ffffff;
+  line-height: 1.5;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -106,7 +119,19 @@ input {
   width: 100%;
 }
 
-.main__top {
+.main__top,
+.main__bottom {
   display: flex;
   gap: 20px;
+}
+
+.interests-box {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.interests-box__header {
 }
