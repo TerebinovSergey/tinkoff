@@ -1,0 +1,28 @@
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  min-width: 0;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.contact-box__title {
+  max-width: 100%;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.contact-box__email {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.contact-box__email {
+  width: 100%;
+}
+
+.contact-box__email_color-grey {
+  color: #dddddd;
+}

@@ -1,5 +1,6 @@
 @import './styles/normalize.css';
 @import './styles/variables.css';
+@import './styles/editable-text.css';
 @import './styles/photo.css';
 @import './styles/header.css';
 @import './styles/name-box.css';
@@ -8,6 +9,7 @@
 @import './styles/tool-box.css';
 @import './styles/education-box.css';
 @import './styles/interests-box.css';
+@import './styles/contact-box.css';
 
 @font-face {
   font-family: 'Poppins';
@@ -52,6 +54,7 @@ p {
 }
 
 input {
+  padding: 0;
   border: 0;
 }
 
@@ -92,28 +95,8 @@ input {
   list-style-type: none;
 }
 
-.editable-text {
-  display: inline-block;
-  min-width: 10px;
-  white-space: nowrap;
-}
-
-.editable-text:empty {
-  border: 1px solid #000000;
-  border-radius: 3px;
-  background-color: #f17e7e;
-}
-
-.editable-text:focus {
-  padding: 2px 10px 2px 2px;
-  outline: none;
-  border: 1px solid #000000;
-  border-radius: 3px;
-  color: #000000;
-  background-color: #ffffff;
-}
-
 .main {
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -124,4 +107,22 @@ input {
 .main__bottom {
   display: flex;
   gap: 20px;
+  width: 100%;
+}
+
+.main__bottom-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.main__top-left-column {
+  display: flex;
+  flex: 1;
+}
+
+.main__top-right-column {
+  display: flex;
+  width: 124px;
 }

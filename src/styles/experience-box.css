@@ -3,9 +3,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  flex: 3;
-
   border-radius: 12px;
+  width: 100%;
 }
 
 .list-job {
@@ -48,7 +47,7 @@
 
 .job__content {
   display: flex;
-  gap: 8px;
+  gap: 18px;
 }
 
 .job__info {
@@ -69,7 +68,6 @@
   display: flex;
   flex: 2;
   flex-direction: column;
-  gap: 5px;
 }
 
 .job-feature__item {
@@ -100,9 +98,15 @@
   max-width: 65px;
 }
 
-.about-job__textarea {
-  width: 100%;
-  border: none;
-  overflow: hidden;
-  resize: none;
+.job-feature__text {
+  position: relative;
+  white-space: normal;
+  text-align: left;
+}
+
+.job-feature__text::before {
+  position: absolute;
+  content: '•';
+  top: 0;
+  left: -8px;
 }

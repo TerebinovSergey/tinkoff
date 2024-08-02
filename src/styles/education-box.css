@@ -14,8 +14,7 @@
   gap: 16px;
 }
 
-.education-box__column-1,
-.education-box__column-2 {
+.education-box__column {
   flex: 1;
   min-width: 0;
 }

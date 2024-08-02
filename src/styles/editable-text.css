@@ -1,0 +1,20 @@
+.editable-text {
+  display: inline-block;
+  min-width: 10px;
+  white-space: nowrap;
+}
+
+.editable-text:empty {
+  border: 1px solid #000000;
+  border-radius: 3px;
+  background-color: #f17e7e;
+}
+
+.editable-text:focus {
+  padding: 2px 10px 2px 2px;
+  outline: none;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  color: #000000;
+  background-color: #ffffff;
+}
