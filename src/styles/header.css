@@ -15,9 +15,3 @@
   display: flex;
   flex: 1;
 }
-
-@media screen and (max-width: 550px) {
-  .header {
-    flex-direction: column;
-  }
-}

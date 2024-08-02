@@ -126,3 +126,47 @@ input {
   display: flex;
   width: 124px;
 }
+
+@media screen and (max-width: 550px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .photo {
+    max-height: 300px;
+  }
+
+  .main__top {
+    flex-direction: column;
+  }
+
+  .tool-box {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .list-tool-categories {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .main__top-right-column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main__bottom {
+    flex-direction: column;
+  }
+
+  .list-tool-categories {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .category-tools {
+    margin: 0;
+  }
+}
