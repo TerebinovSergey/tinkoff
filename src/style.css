@@ -7,6 +7,7 @@
 @import './styles/experience-box.css';
 @import './styles/tool-box.css';
 @import './styles/education-box.css';
+@import './styles/interests-box.css';
 
 @font-face {
   font-family: 'Poppins';
@@ -94,6 +95,7 @@ input {
 .editable-text {
   display: inline-block;
   min-width: 10px;
+  white-space: nowrap;
 }
 
 .editable-text:empty {
@@ -109,7 +111,6 @@ input {
   border-radius: 3px;
   color: #000000;
   background-color: #ffffff;
-  line-height: 1.5;
 }
 
 .main {
@@ -123,15 +124,4 @@ input {
 .main__bottom {
   display: flex;
   gap: 20px;
-}
-
-.interests-box {
-  display: flex;
-  flex: 1;
-  min-width: 0;
-  border-radius: 12px;
-  padding: 12px;
-}
-
-.interests-box__header {
 }
