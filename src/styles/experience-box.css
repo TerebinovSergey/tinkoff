@@ -50,13 +50,13 @@
 
 .job__content {
   display: flex;
-  gap: 18px;
 }
 
 .job__info {
   display: flex;
   flex-direction: column;
-  width: 124px;
+  flex: 1;
+  min-width: 124px;
 }
 
 .job__role {
@@ -66,7 +66,7 @@
 }
 
 .job__list-feature {
-  padding: 0;
+  padding: 0 0 0 12px;
   display: flex;
   flex: 2;
   flex-direction: column;
@@ -92,10 +92,6 @@
   line-height: 12px;
 }
 
-.about-job__company-name {
-  /* max-width: 43px; */
-}
-
 .about-job__info {
   max-width: 65px;
 }
@@ -106,9 +102,6 @@
   text-align: left;
 }
 
-.job-feature__text::before {
-  position: absolute;
-  content: '•';
-  top: 0;
-  left: -8px;
+.job-feature__mark {
+  align-self: flex-start;
 }

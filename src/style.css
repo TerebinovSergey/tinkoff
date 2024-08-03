@@ -13,6 +13,8 @@
 @import './styles/contact-box.css';
 @import './styles/main-section.css';
 @import './styles/footer.css';
+@import './styles/buttons.css';
+@import './styles/ripple-animation.css';
 
 @font-face {
   font-family: 'Poppins';
