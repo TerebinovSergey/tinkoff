@@ -37,8 +37,7 @@
   border-radius: 10px;
 }
 
-.education__header,
-.education__content-header {
+.education__header {
   font-size: 10px;
   font-weight: 500;
   line-height: 15px;

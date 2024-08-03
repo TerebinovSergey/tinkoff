@@ -1,0 +1,48 @@
+.main-container {
+  padding: 0 20px;
+  max-width: 595px;
+}
+
+.background-base {
+  background-color: var(--background-base-color);
+}
+
+.background-green {
+  background-color: var(--green-color);
+}
+
+.background-white {
+  background-color: #ffffff;
+}
+
+.background-black {
+  background-color: #000000;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.title {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.ul-reset {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.visual-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+}

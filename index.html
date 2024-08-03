@@ -19,23 +19,31 @@
         </div>
         <section class="name-box">
           <div class="name-box__container background-base">
-            <h2 class="name-box__greeting-phrase">Hello 👋🏻 I’m</h2>
+            <h2
+              class="name-box__greeting-phrase title editable-text"
+              contenteditable="true"
+              data-save-key="personTitle"
+            >
+              Hello 👋🏻 I’m
+            </h2>
             <div class="your-info">
               <div class="your-info__input-container">
-                <input
-                  class="your-info__name your-info__input background-base"
-                  type="text"
-                  value="Karthik SR"
-                  aria-label="Your name"
-                />
+                <span
+                  class="your-info__name editable-text"
+                  contenteditable="true"
+                  data-save-key="personName"
+                >
+                  Karthik SR
+                </span>
               </div>
               <div class="your-info__input-container">
-                <input
-                  class="your-info__role your-info__input background-base"
-                  type="text"
-                  value="UX/UI Designer"
-                  aria-label="Your role"
-                />
+                <span
+                  class="your-info__role editable-text"
+                  contenteditable="true"
+                  data-save-key="personRole"
+                >
+                  UX/UI Designer
+                </span>
               </div>
             </div>
           </div>
@@ -43,32 +51,45 @@
       </div>
       <div class="header__right-container">
         <section class="languages-box background-base">
-          <h2 class="languages-box__title title">Languages</h2>
+          <h2
+            class="languages-box__title title editable-text"
+            contenteditable="true"
+            data-save-key="languagesTitle"
+          >
+            Languages
+          </h2>
+
           <div class="languages-box__container">
-            <ul class="list-name-languages ul-reset">
+            <ul
+              class="list-name-languages ul-reset"
+              aria-label="Knowledge of languages"
+            >
               <li class="list-name-languages__item">
-                <input
-                  class="list-name-languages__name background-base"
-                  type="text"
-                  value="English"
-                  aria-label="Language"
-                />
+                <span
+                  class="list-name-languages__name editable-text"
+                  contenteditable="true"
+                  data-save-key="languageItem"
+                >
+                  English
+                </span>
               </li>
               <li class="list-name-languages__item">
-                <input
-                  class="list-name-languages__name background-base"
-                  type="text"
-                  value="Malayalam"
-                  aria-label="Language"
-                />
+                <span
+                  class="list-name-languages__name editable-text"
+                  contenteditable="true"
+                  data-save-key="languageItem2"
+                >
+                  Malayalam
+                </span>
               </li>
               <li class="list-name-languages__item">
-                <input
-                  class="list-name-languages__name background-base"
-                  type="text"
-                  value="Hindi"
-                  aria-label="Language"
-                />
+                <span
+                  class="list-name-languages__name editable-text"
+                  contenteditable="true"
+                  data-save-key="languageItem3"
+                >
+                  Hindi
+                </span>
               </li>
             </ul>
             <ul class="list-level-languages ul-reset">
@@ -84,310 +105,375 @@
       <div class="main__top">
         <div class="main__top-left-column">
           <section class="experience-box background-base">
-            <header>
-              <h2 class="experience-box__title title">Experience</h2>
-            </header>
+            <h2
+              class="experience-box__title title editable-text"
+              contenteditable="true"
+              data-save-key="experienceTitle"
+            >
+              Experience
+            </h2>
             <ul class="list-job ul-reset">
-              <li class="list-job__item job background-green color-white">
-                <header class="job__header">
-                  <input
-                    class="job__date background-green color-white"
-                    type="text"
-                    value="Jun. 2023 - Present"
-                    aria-label="Job date"
-                  />
-                  <div class="job__last-job job__last-job_color">
-                    most recent
-                  </div>
-                </header>
-                <div class="job__content">
-                  <div class="job__info">
-                    <input
-                      class="job__role background-green color-white"
-                      type="text"
-                      value="Marketing Manager"
-                      aria-label="Job role"
-                    />
-                    <div class="about-job">
-                      <input
-                        class="about-job__company-name background-green color-white"
-                        type="text"
-                        value="Pankayam"
-                        aria-label="Company-name"
-                      />
-                      <span>|</span>
-                      <input
-                        class="about-job__info background-green color-white"
-                        type="text"
-                        value="Full-time"
-                        aria-label="Type employment"
-                      />
+              <li class="list-job__item background-green color-white">
+                <section class="job">
+                  <header class="job__header">
+                    <h3 class="job__date">
+                      <span
+                        class="editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="jobTitle"
+                        >Jun. 2023 - Present</span
+                      >
+                    </h3>
+                    <div class="job__last-job job__last-job_color">
+                      <span
+                        class="editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="jobMostRecent"
+                        >most recent</span
+                      >
                     </div>
+                  </header>
+                  <div class="job__content">
+                    <div class="job__info">
+                      <span
+                        class="job__role editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        aria-label="Role at work"
+                        data-save-key="jobRole"
+                        >Marketing Manager</span
+                      >
+                      <div class="about-job">
+                        <span
+                          class=".about-job__company-name editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Company name"
+                          data-save-key="jobCompanyName"
+                          >Pankayam</span
+                        >
+                        <span>|</span>
+                        <span
+                          class=".about-job__info editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Type employment"
+                          data-save-key="jobTypeEmployment"
+                          >Full-time</span
+                        >
+                      </div>
+                    </div>
+                    <ul
+                      class="job__list-feature job-feature"
+                      aria-label="Job features"
+                    >
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="jobFeature"
+                          >Strategy development and planning of campaigns that
+                          promote the business and generate genuine traffic
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="jobFeature2"
+                          >SEO Content Creation for Blogs, Website, Social media
+                        </span>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="job__list-feature job-feature">
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >Strategy development and planning of campaigns that
-                        promote the business and generate genuine traffic
-                      </span>
-                    </li>
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >SEO Content Creation for Blogs, Website, Social media
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                </section>
               </li>
-              <li class="list-job__item job background-white">
-                <header class="job__header">
-                  <input
-                    class="job__date"
-                    type="text"
-                    value="2017 - Present"
-                    aria-label="Job date"
-                  />
-                </header>
-                <div class="job__content">
-                  <div class="job__info">
-                    <input
-                      class="job__role"
-                      type="text"
-                      value="Graphic / Web designer"
-                      aria-label="Job role"
-                    />
-                    <div class="about-job">
-                      <input
-                        class="about-job__company-name"
-                        type="text"
-                        value="Freelance"
-                        aria-label="Company name"
-                      />
+              <li class="list-job__item background-white">
+                <section class="job">
+                  <h3 class="job__date">
+                    <span
+                      class="editable-text"
+                      contenteditable="true"
+                      role="textbox"
+                      data-save-key="jobTitle2"
+                      >2017 - Present</span
+                    >
+                  </h3>
+                  <div class="job__content">
+                    <div class="job__info">
+                      <span
+                        class="job__role editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        aria-label="Role at work"
+                        data-save-key="jobRole2"
+                        >Graphic / Web designer</span
+                      >
+                      <div class="about-job">
+                        <span
+                          class=".about-job__company-name editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Company name"
+                          data-save-key="jobCompanyName2"
+                          >Freelance</span
+                        >
+                      </div>
                     </div>
+                    <ul
+                      class="job__list-feature job-feature"
+                      aria-label="List of the job feature"
+                    >
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job2Feature"
+                          >Development of internal projects from scratch,
+                          product design of brands
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job2Feature2"
+                          >Landing page, webapps and hybrid apps
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job2Feature3"
+                          >Coordinating with outside agencies, art services, web
+                          designer, marketing, printers, and colleagues as
+                          necessary.
+                        </span>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="job__list-feature job-feature">
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >Development of internal projects from scratch, product
-                        design of brands
-                      </span>
-                    </li>
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >Landing page, webapps and hybrid apps
-                      </span>
-                    </li>
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >Coordinating with outside agencies, art services, web
-                        designer, marketing, printers, and colleagues as
-                        necessary.
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                </section>
               </li>
-              <li class="list-job__item job background-white">
-                <header class="job__header">
-                  <input
-                    class="job__date"
-                    type="text"
-                    value="Sep. 2021 - Jun. 2023"
-                    aria-label="Job date"
-                  />
-                </header>
-                <div class="job__content">
-                  <div class="job__info">
-                    <input
-                      class="job__role"
-                      type="text"
-                      value="Legal Assistant"
-                      aria-label="Job role"
-                    />
-                    <div class="about-job">
-                      <input
-                        class="about-job__company-name"
-                        type="text"
-                        value="Law Firm"
-                        aria-label="Company name"
-                      />
-                      <span>|</span>
-                      <input
-                        class="about-job__info"
-                        type="text"
-                        value="Intern"
-                        aria-label="Type employment"
-                      />
+
+              <li class="list-job__item background-white">
+                <section class="job">
+                  <h3 class="job__date">
+                    <span
+                      class="editable-text"
+                      contenteditable="true"
+                      role="textbox"
+                      data-save-key="jobTitle3"
+                      >JSep. 2021 - Jun. 2023</span
+                    >
+                  </h3>
+                  <div class="job__content">
+                    <div class="job__info">
+                      <span
+                        class="job__role editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        aria-label="Role at work"
+                        data-save-key="jobRole3"
+                        >Legal Assistant</span
+                      >
+                      <div class="about-job">
+                        <span
+                          class=".about-job__company-name editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Company name"
+                          data-save-key="jobCompanyName3"
+                          >Law Firm</span
+                        >
+                        <span>|</span>
+                        <span
+                          class=".about-job__info editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          aria-label="Type employment"
+                          data-save-key="jobTypeEmployment3"
+                          >Intern</span
+                        >
+                      </div>
                     </div>
+                    <ul
+                      class="job__list-feature job-feature"
+                      aria-label="List of the job feature"
+                    >
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job3Feature"
+                          >Provide administrative support to lawyer and enhance
+                          office effectiveness
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job3Feature2"
+                          >Handle communication with clients, witnesses etc.
+                        </span>
+                      </li>
+                      <li class="job-feature__item">
+                        <span
+                          class="job-feature__text editable-text"
+                          contenteditable="true"
+                          role="textbox"
+                          data-save-key="job3Feature3"
+                          >prepare case briefs and summarize depositions,
+                          interrogatories and testimony
+                        </span>
+                      </li>
+                    </ul>
                   </div>
-                  <ul class="job__list-feature job-feature">
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >Provide administrative support to lawyer and enhance
-                        office effectiveness
-                      </span>
-                    </li>
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >Handle communication with clients, witnesses etc.
-                      </span>
-                    </li>
-                    <li class="job-feature__item">
-                      <span
-                        class="job-feature__text editable-text"
-                        contenteditable="true"
-                        role="textbox"
-                        >Prepare case briefs and summarize depositions,
-                        interrogatories and testimony
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                </section>
               </li>
             </ul>
           </section>
         </div>
         <div class="main__top-right-column">
           <section class="tool-box background-base">
-            <header>
-              <h2 class="tool-box__title title">Tools</h2>
-            </header>
-            <ul class="list-tool-categories ul-reset">
+            <h2
+              class="tool-box__title title editable-text"
+              contenteditable="true"
+              data-save-key="toolsTitle"
+            >
+              Tools
+            </h2>
+            <ul class="list-tool-categories ul-reset" aria-label="tool icons">
               <li class="category-tools background-white">
-                <header
-                  class="category-tools__header color-white background-black"
+                <h3
+                  class="category-tools__header color-white background-black editable-text"
+                  contenteditable="true"
+                  data-save-key="toolsSubTitle"
                 >
-                  <h3 class="category-tools__title">design</h3>
-                </header>
+                  design
+                </h3>
                 <ul class="list-tools ul-reset">
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/figma.svg"
                       alt="Figma"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/adobe-photoshop.svg"
                       alt="Adobe photoshop"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/adobe-illustrator.svg"
                       alt="Adobe illustrator"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/adobe-premiere.svg"
                       alt="Adobe premiere"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/notion.svg"
                       alt="Notion"
-                      class="list-tools__img logo-notion"
+                      class="tools__icon logo-notion"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/meet.svg"
                       alt="Meet"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                 </ul>
               </li>
               <li class="category-tools background-white">
-                <header
-                  class="category-tools__header color-white background-black"
+                <h3
+                  class="category-tools__header color-white background-black editable-text"
+                  contenteditable="true"
+                  data-save-key="toolsSubTitle2"
                 >
-                  <h3 class="category-tools__title">no-code</h3>
-                </header>
+                  no-code
+                </h3>
                 <ul class="list-tools ul-reset">
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/logoZapìer.svg"
                       alt="Zapìer"
-                      class="list-tools__img"
+                      class="list-tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/logoWebflow.svg"
                       alt="Webflow"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/logoFramer.svg"
                       alt="Framer"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/logoWordpress.svg"
                       alt="Wordpress"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                 </ul>
               </li>
               <li class="category-tools background-white">
-                <header
-                  class="category-tools__header color-white background-black"
+                <h3
+                  class="category-tools__header color-white background-black editable-text"
+                  contenteditable="true"
+                  data-save-key="toolsSubTitle3"
                 >
-                  <h3 class="category-tools__title">artificial intelligence</h3>
-                </header>
+                  artificial intelligence
+                </h3>
                 <ul class="list-tools ul-reset">
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/logoChatGPT.svg"
                       alt="ChatGPT"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/logoCopilot.svg"
                       alt="Copilot"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                   <li class="list-tools__item">
                     <img
                       src="./src/icons/logoMidjourney.svg"
                       alt="Midjourney"
-                      class="list-tools__img"
+                      class="tools__icon"
                     />
                   </li>
                 </ul>
@@ -399,14 +485,13 @@
       <div class="main__bottom">
         <div class="main__bottom-column">
           <section class="education-box background-base">
-            <header class="education-box__header">
-              <h2
-                class="education-box__title title editable-text"
-                contenteditable="true"
-              >
-                Education
-              </h2>
-            </header>
+            <h2
+              class="education-box__title title editable-text"
+              contenteditable="true"
+              data-save-key="educationTitle"
+            >
+              Education
+            </h2>
             <div class="education-box__content">
               <ul
                 class="education-box__column list-educations ul-reset"
@@ -419,6 +504,7 @@
                         class="editable-text"
                         contenteditable="true"
                         role="textbox"
+                        data-save-key="educationYears"
                         >2023</span
                       >
                     </h3>
@@ -429,22 +515,22 @@
                     />
                   </header>
                   <section class="education__content">
-                    <header class="education__content-header">
-                      <h3 class="education__title">
-                        <span
-                          class="editable-text"
-                          contenteditable="true"
-                          role="textbox"
-                          >UI/UX</span
-                        >
-                      </h3>
-                    </header>
+                    <h3 class="education__header">
+                      <span
+                        class="education__title editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="educationSubtitle"
+                        >UI/UX</span
+                      >
+                    </h3>
                     <ul class="education__tags ul-reset">
                       <li class="education__tag tag">
                         <span
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag"
                           >UX</span
                         >
                       </li>
@@ -453,6 +539,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag2"
                           >UI</span
                         >
                       </li>
@@ -461,6 +548,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag3"
                           >research</span
                         >
                       </li>
@@ -469,6 +557,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag4"
                           >DesignSystem</span
                         >
                       </li>
@@ -477,6 +566,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag5"
                           >Ui</span
                         >
                       </li>
@@ -485,6 +575,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag6"
                           >wireframing</span
                         >
                       </li>
@@ -493,6 +584,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag7"
                           >figma</span
                         >
                       </li>
@@ -501,6 +593,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="educationTag8"
                           >Ux</span
                         >
                       </li>
@@ -512,6 +605,7 @@
                       contenteditable="true"
                       aria-label="School name"
                       role="textbox"
+                      data-save-key="educationSchool"
                     >
                       Coursera
                     </span>
@@ -524,31 +618,32 @@
                         class="editable-text"
                         contenteditable="true"
                         role="textbox"
+                        data-save-key="education3Years"
                         >2017</span
                       >
                     </h3>
                     <img
-                      class="education__like hidden"
+                      class="education__like"
                       src="./src/icons/like.svg"
                       alt="like"
                     />
                   </header>
                   <section class="education__content">
-                    <header class="education__content-header">
-                      <h3 class="education__title">
-                        <span
-                          class="editable-text"
-                          contenteditable="true"
-                          role="textbox"
-                          >Graphic design</span
-                        >
-                      </h3>
-                    </header>
+                    <h3 class="education__header">
+                      <span
+                        class="education__title editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="education3Subtitle"
+                        >Graphic design</span
+                      >
+                    </h3>
                     <ul class="education__tags ul-reset">
                       <li class="education__tag tag">
                         <span
                           class="tag__content editable-text"
                           contenteditable="true"
+                          data-save-key="education3Tag"
                           >branding</span
                         >
                       </li>
@@ -556,6 +651,7 @@
                         <span
                           class="tag__content editable-text"
                           contenteditable="true"
+                          data-save-key="education3Tag2"
                           >web</span
                         >
                       </li>
@@ -563,6 +659,7 @@
                         <span
                           class="tag__content editable-text"
                           contenteditable="true"
+                          data-save-key="education3Tag3"
                           >illustration</span
                         >
                       </li>
@@ -570,6 +667,7 @@
                         <span
                           class="tag__content editable-text"
                           contenteditable="true"
+                          data-save-key="education3Tag4"
                           >adobe</span
                         >
                       </li>
@@ -581,6 +679,7 @@
                       contenteditable="true"
                       aria-label="School name"
                       role="textbox"
+                      data-save-key="education3School"
                     >
                       Coursera
                     </span>
@@ -595,26 +694,26 @@
                         class="editable-text"
                         contenteditable="true"
                         role="textbox"
+                        data-save-key="education2Years"
                         >2017 - 2022</span
                       >
                     </h3>
                     <img
-                      class="education__like hidden"
+                      class="education__like"
                       src="./src/icons/like.svg"
                       alt="like"
                     />
                   </header>
                   <section class="education__content">
-                    <header class="education__content-header">
-                      <h3 class="education__title">
-                        <span
-                          class="editable-text"
-                          contenteditable="true"
-                          role="textbox"
-                          >Law</span
-                        >
-                      </h3>
-                    </header>
+                    <h3 class="education__header">
+                      <span
+                        class="education__title editable-text"
+                        contenteditable="true"
+                        role="textbox"
+                        data-save-key="education2Subtitle"
+                        >Law</span
+                      >
+                    </h3>
                     <ul
                       class="education__tags ul-reset"
                       aria-label="Education tags"
@@ -624,6 +723,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="education2Tag"
                           >law</span
                         >
                       </li>
@@ -632,6 +732,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="education2Tag2"
                           >legalStudies</span
                         >
                       </li>
@@ -640,6 +741,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="education2Tag3"
                           >contracts</span
                         >
                       </li>
@@ -648,6 +750,7 @@
                           class="tag__content editable-text"
                           contenteditable="true"
                           role="textbox"
+                          data-save-key="education2Tag4"
                           >internationalLaws</span
                         >
                       </li>
@@ -659,6 +762,7 @@
                       contenteditable="true"
                       aria-label="School name"
                       role="textbox"
+                      data-save-key="education2School"
                     >
                       University of Kerala
                     </span>
@@ -671,14 +775,13 @@
 
         <div class="main__bottom-column">
           <section class="interests-box background-base">
-            <header class="interests-box__header">
-              <h2
-                class="interests-box__title title editable-text"
-                contenteditable="true"
-              >
-                Interests
-              </h2>
-            </header>
+            <h2
+              class="interests-box__title title editable-text"
+              contenteditable="true"
+              data-save-key="interestsTitle"
+            >
+              Interests
+            </h2>
             <ul
               class="interests-box__list-interests ul-reset"
               aria-label="Interests"
@@ -688,6 +791,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag"
                   >branding</span
                 >
               </li>
@@ -696,6 +800,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag2"
                   >design</span
                 >
               </li>
@@ -704,6 +809,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag3"
                   >photography</span
                 >
               </li>
@@ -712,6 +818,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag4"
                   >artificial intelligence</span
                 >
               </li>
@@ -720,6 +827,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag5"
                   >illustration</span
                 >
               </li>
@@ -728,6 +836,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag6"
                   >typography</span
                 >
               </li>
@@ -736,6 +845,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag7"
                   >social networks</span
                 >
               </li>
@@ -744,6 +854,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag8"
                   >research</span
                 >
               </li>
@@ -752,6 +863,7 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag9"
                   >dron pilot</span
                 >
               </li>
@@ -760,31 +872,46 @@
                   class="editable-text"
                   contenteditable="true"
                   role="textbox"
+                  data-save-key="interestsTag10"
                   >games</span
                 >
               </li>
             </ul>
           </section>
           <section class="contact-box background-black color-white">
-            <header>
-              <h2
-                contenteditable="true"
-                class="contact-box__title title editable-text"
-              >
-                Let´s chat! I´m ready to work on existing projects
-              </h2>
-            </header>
+            <h2
+              contenteditable="true"
+              class="contact-box__title title editable-text"
+              data-save-key="contactInfoTitle"
+            >
+              Let´s chat! I´m ready to work on existing projects
+            </h2>
             <address class="contact-box__address">
+              <label class="contact-box__label visual-hidden" for="email"
+                >Email:</label
+              >
               <input
                 class="contact-box__email contact-box__email_color-grey background-black"
                 type="email"
+                name="email"
                 value="example@example.com"
+                data-save-key="contactInfoEmail"
               />
             </address>
           </section>
         </div>
       </div>
     </main>
+    <footer class="footer main-container">
+      <div class="footer-container background-base">
+        <button class="save-button">save</button>
+        <form>
+          <label for="save">Save:</label>
+          <input id="save" name="save" type="checkbox" checked />
+        </form>
+      </div>
+    </footer>
+
     <script src="./src/index.js"></script>
   </body>
 </html>

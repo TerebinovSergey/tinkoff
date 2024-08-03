@@ -23,10 +23,7 @@
 }
 
 .interests-box__interest {
+  display: flex;
   padding: 4px 10px;
   border-radius: 40px;
-}
-
-.interests-box__interest_bg-white {
-  background-color: #ffffff;
 }

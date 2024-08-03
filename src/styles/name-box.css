@@ -24,10 +24,6 @@
   gap: 7px;
 }
 
-.your-info__input {
-  max-width: 100px;
-}
-
 .your-info__name {
   font-size: 14px;
   font-weight: 600;

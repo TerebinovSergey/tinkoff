@@ -10,6 +10,8 @@
 .list-tool-categories {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
   gap: 10px;
 }
 
@@ -30,12 +32,8 @@
   display: flex;
 }
 
-.category-tools__title {
-  margin: 0;
-  white-space: nowrap;
-}
-
 .category-tools__header {
+  margin: 0;
   padding: 2px 6px;
   position: absolute;
   top: 0;
@@ -45,7 +43,8 @@
   font-weight: 500;
   line-height: 7px;
   border-radius: 12px;
-  max-width: 100%;
+  white-space: nowrap;
+  max-width: 98%;
 }
 
 .list-tools {

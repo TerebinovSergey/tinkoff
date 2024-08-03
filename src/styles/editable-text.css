@@ -1,7 +1,8 @@
 .editable-text {
   display: inline-block;
   min-width: 10px;
-  white-space: nowrap;
+  white-space: normal;
+  transition: padding 0.5s ease-in-out;
 }
 
 .editable-text:empty {
