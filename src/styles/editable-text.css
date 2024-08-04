@@ -22,7 +22,7 @@ body .editable-text:focus,
 }
 
 @media (hover: hover) {
-  .editable-text:hover {
+  body .editable-text:hover {
     background-color: #a5a091;
     border-radius: 3px;
   }

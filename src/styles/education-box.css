@@ -38,13 +38,15 @@
 }
 
 .education__header {
+  display: flex;
+  justify-content: space-between;
   font-size: 10px;
   font-weight: 500;
   line-height: 15px;
 }
-.education__header {
+
+.education__years {
   display: flex;
-  justify-content: space-between;
 }
 
 .education__title {

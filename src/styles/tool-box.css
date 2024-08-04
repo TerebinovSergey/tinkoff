@@ -5,9 +5,11 @@
   gap: 15px;
   border-radius: 12px;
   min-width: 0;
+  width: 100%;
 }
 
 .list-tool-categories {
+  margin: 0 12px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,7 +22,6 @@
 }
 
 .category-tools {
-  margin: 0 12px;
   padding: 16px 11px;
   display: flex;
   position: relative;

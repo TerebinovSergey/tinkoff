@@ -4,10 +4,11 @@ export function saveTextContent() {
   const elements = document.querySelectorAll('[data-save-key]');
   const resume = {};
   elements.forEach((element) => {
-    resume[element.dataset.saveKey] =
-      element.localName === 'input'
-        ? element.value.trim()
-        : element.textContent.trim();
+    if (element.localName === 'input') {
+      resume[element.dataset.saveKey] = element.value.trim();
+    } else {
+      resume[element.dataset.saveKey] = element.textContent.trim();
+    }
   });
 
   localStorage.setItem(KEY_CV, JSON.stringify(resume));
@@ -26,12 +27,14 @@ export function loadTextContent() {
   }
 
   for (const key in resume) {
-    const element = document.querySelector(`[data-save-key="${key}"]`);
-    if (!element) return;
-    if (element.localName === 'input') {
-      element.value = resume[key];
-    } else {
-      element.textContent = resume[key];
+    if (Object.prototype.hasOwnProperty.call(resume, key)) {
+      const element = document.querySelector(`[data-save-key="${key}"]`);
+      if (!element) return;
+      if (element.localName === 'input') {
+        element.value = resume[key];
+      } else {
+        element.textContent = resume[key];
+      }
     }
   }
 }

@@ -21,10 +21,11 @@
 
 .main__top-left-column {
   display: flex;
-  flex: 1;
+  flex: 3;
 }
 
 .main__top-right-column {
   display: flex;
-  width: 124px;
+  max-width: 124px;
+  flex: 1;
 }
