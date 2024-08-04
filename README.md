@@ -10,6 +10,8 @@
 
 4. Открыть файл index.html и запустить live server
 
+### Deployment: https://terebinovsergey.github.io/tinkoff/
+
 ### Доступные скрипты
 
 :white_check_mark: "lint": "eslint ."  
