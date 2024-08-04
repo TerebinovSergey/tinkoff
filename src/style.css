@@ -61,16 +61,6 @@ input {
   border: 0;
 }
 
-@media screen and (min-width: 700px) {
-  .main__top-right-column {
-    max-width: 50%;
-  }
-
-  .list-tools {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
 @media screen and (min-width: 620px) {
   .editable-text,
   .contact-box__email {
@@ -96,7 +86,7 @@ input {
   }
 
   .category-tools__header {
-    font-size: 8px;
+    font-size: 5px;
   }
 
   .education__content {
@@ -112,10 +102,19 @@ input {
   .list-name-languages__name {
     max-width: 100%;
   }
+}
 
-  .footer-container {
-    justify-content: end;
-    gap: 30px;
+@media screen and (min-width: 700px) {
+  .main__top-right-column {
+    max-width: 50%;
+  }
+
+  .list-tools {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .category-tools__header {
+    font-size: 8px;
   }
 }
 

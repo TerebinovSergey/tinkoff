@@ -5,7 +5,7 @@
 .footer-container {
   padding: 12px;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   border-radius: 12px;
   width: 100%;
